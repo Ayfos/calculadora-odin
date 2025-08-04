@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    width: 360px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.display {
+    background-color: #000;
+    color: #0fdbff;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 -5px 10px rgba(0, 255, 255, 0.2);
+    user-select: none;
+    min-height: 60px;
+    overflow-x: auto;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 12px;
+}
+
+/* Números y otros botones */
+.buttons-numbers {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.buttons-numbers button {
+    flex: 1 0 30%;
+    /* tres botones por fila */
+    padding: 18px 0;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #222;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+/* El botón cero ocupa dos espacios para que sea ancho */
+button.zero {
+    flex: 1 0 62%;
+}
+
+/* Botón decimal  */
+button.decimal {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Botón de borrar */
+button.clear {
+    flex: 1 0 30%;
+    background-color: #d9534f;
+    /* rojo más suave */
+    color: white;
+    box-shadow: 0 2px 5px rgba(217, 83, 79, 0.6);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button.clear:hover {
+    background-color: #c9302c;
+    /* un poco más oscuro al hover */
+    box-shadow: 0 4px 10px rgba(201, 48, 44, 0.8);
+}
+
+/* Operadores en columna */
+.buttons-operators {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.buttons-operators button {
+    flex: 1 1 auto;
+    padding: 18px 0;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #ff9500;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+/* Botón igual con color distinto */
+button.equals {
+    background-color: #00cc66;
+}
+
+/* Hover */
+.buttons-numbers button:hover,
+.buttons-operators button:hover {
+    filter: brightness(1.15);
+}
