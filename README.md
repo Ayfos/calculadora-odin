@@ -83,7 +83,5 @@ Este proyecto me permitió consolidar conocimientos adquiridos durante la secci�
 
 ---
 
-## 📝 Licencia
 
-Este proyecto está bajo la licencia [MIT](LICENSE).
 
