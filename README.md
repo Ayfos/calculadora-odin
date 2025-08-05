@@ -58,7 +58,7 @@ calculadora-odin/
 
 ## 🎮 Demo
 
-Puedes ver una demo en vivo [aquí](https://ayfos.github.io/calculadora-js/)  
+Puedes ver una demo en vivo [aquí](https://ayfos.github.io/calculadora-odin/)  
 *(Si el enlace no funciona, abre el archivo `index.html` localmente en tu navegador)*
 
 ---
